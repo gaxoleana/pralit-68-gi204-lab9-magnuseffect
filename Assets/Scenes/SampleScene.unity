@@ -599,6 +599,7 @@ GameObject:
   - component: {fileID: 1694418511}
   - component: {fileID: 1694418510}
   - component: {fileID: 1694418514}
+  - component: {fileID: 1694418515}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -726,6 +727,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1694418515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694418509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31758f2d400785f4793cd08867e4521e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotateWithTouque
+  torqueSpeed: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
