@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class RotateWithTorque : MonoBehaviour
 {
     Rigidbody rb;
-    public float torqueSpeed = 10;
+    public float torqueForce = 1;
 
     void Start()
     {
@@ -12,6 +13,9 @@ public class RotateWithTorque : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.AddTorque(0, torqueSpeed, 0, ForceMode.Force);
+        if (Keyboard.current.dKey.isPressed)
+        {
+            rb.AddTorque(0, 0, torqueForce, ForceMode.Force);
+        }
     }
 }
