@@ -22,10 +22,12 @@ public class MagnusSoccerKick : MonoBehaviour
         {
             rb.AddForce(Vector3.forward * kickForce, ForceMode.Impulse);
             rb.AddTorque(Vector3.up * spinAmount);
+
+            isShot = true;
         }
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         if (!isShot) return;
 
